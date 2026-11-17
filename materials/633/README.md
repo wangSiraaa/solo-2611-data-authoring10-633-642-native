@@ -1,0 +1,1 @@
+case.json的比分始终按该match的主/客槽位，不直接附着球队；before_fixture每对一次、主客1/2平衡，flipped_match_ids同时翻三场得到另一合法赛程。scores固定，按两个真实edition解读应不同。所有时间/赛程为虚构；不提供排名或赛程目标代码。
