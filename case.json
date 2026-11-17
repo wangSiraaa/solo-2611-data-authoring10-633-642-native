@@ -1,0 +1,58 @@
+{
+  "companies": [
+    {
+      "id": "A",
+      "limit": 100
+    },
+    {
+      "id": "B",
+      "limit": 100
+    },
+    {
+      "id": "C",
+      "limit": 100
+    },
+    {
+      "id": "D",
+      "limit": 100
+    }
+  ],
+  "notes": [
+    {
+      "id": "n1",
+      "debtor": "A",
+      "creditor": "B",
+      "principal": 80
+    },
+    {
+      "id": "n2",
+      "debtor": "C",
+      "creditor": "A",
+      "principal": 50
+    }
+  ],
+  "merge_proof": {
+    "id": "bc",
+    "kind": "SAME_GROUP",
+    "left": "B",
+    "right": "C"
+  },
+  "new_note_request": {
+    "id": "n3",
+    "debtor": "A",
+    "creditor": "B",
+    "principal": 30
+  },
+  "negative_probe": {
+    "id": "ac-no",
+    "kind": "DIFFERENT_GROUP",
+    "left": "A",
+    "right": "C"
+  },
+  "conflicting_proof": {
+    "id": "ab",
+    "kind": "SAME_GROUP",
+    "left": "A",
+    "right": "B"
+  }
+}
