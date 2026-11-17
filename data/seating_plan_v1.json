@@ -1,0 +1,415 @@
+{
+  "assignment": {
+    "S01": "r1-00",
+    "S02": "r1-20",
+    "S03": "r1-01",
+    "S04": "r1-03",
+    "S06": "r1-02",
+    "S07": "r1-10",
+    "S08": "r1-12",
+    "S09": "r1-23",
+    "S10": "r1-11",
+    "S11": "r1-13"
+  },
+  "conflicts": [
+    [
+      "S01",
+      "S10"
+    ],
+    [
+      "S10",
+      "S11"
+    ],
+    [
+      "S04",
+      "S05"
+    ],
+    [
+      "S02",
+      "S08"
+    ],
+    [
+      "S02",
+      "S03"
+    ],
+    [
+      "S01",
+      "S02"
+    ],
+    [
+      "S05",
+      "S06"
+    ],
+    [
+      "S03",
+      "S04"
+    ],
+    [
+      "S09",
+      "S10"
+    ],
+    [
+      "S01",
+      "S06"
+    ],
+    [
+      "S07",
+      "S08"
+    ],
+    [
+      "S08",
+      "S09"
+    ]
+  ],
+  "eligible_students": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12"
+  ],
+  "exam_id": "E-634",
+  "infeasible_reason": null,
+  "kind": "seating_plan",
+  "needs": {
+    "S01": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S02": {
+      "accessible": true,
+      "aisle": false
+    },
+    "S03": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S04": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S06": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S07": {
+      "accessible": true,
+      "aisle": false
+    },
+    "S08": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S09": {
+      "accessible": false,
+      "aisle": true
+    },
+    "S10": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S11": {
+      "accessible": false,
+      "aisle": false
+    }
+  },
+  "plan_id": "sp-076fa4828e30018a",
+  "product_hash": "837ea1f7236c5ed2",
+  "product_id": "gp-24561d60449c3f06",
+  "qualified_registrants": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "registrants": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "registration_head": 33,
+  "room_count": 1,
+  "room_version": "rooms-v1",
+  "rooms_input": [
+    {
+      "id": "R1",
+      "seats": [
+        {
+          "accessible": true,
+          "aisle": true,
+          "available": true,
+          "col": 0,
+          "room": "R1",
+          "row": 0,
+          "seat_id": "r1-00"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "R1",
+          "row": 0,
+          "seat_id": "r1-01"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "R1",
+          "row": 0,
+          "seat_id": "r1-02"
+        },
+        {
+          "accessible": false,
+          "aisle": true,
+          "available": true,
+          "col": 3,
+          "room": "R1",
+          "row": 0,
+          "seat_id": "r1-03"
+        },
+        {
+          "accessible": true,
+          "aisle": true,
+          "available": true,
+          "col": 0,
+          "room": "R1",
+          "row": 1,
+          "seat_id": "r1-10"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "R1",
+          "row": 1,
+          "seat_id": "r1-11"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "R1",
+          "row": 1,
+          "seat_id": "r1-12"
+        },
+        {
+          "accessible": false,
+          "aisle": true,
+          "available": true,
+          "col": 3,
+          "room": "R1",
+          "row": 1,
+          "seat_id": "r1-13"
+        },
+        {
+          "accessible": true,
+          "aisle": true,
+          "available": true,
+          "col": 0,
+          "room": "R1",
+          "row": 2,
+          "seat_id": "r1-20"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "R1",
+          "row": 2,
+          "seat_id": "r1-21"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "R1",
+          "row": 2,
+          "seat_id": "r1-22"
+        },
+        {
+          "accessible": false,
+          "aisle": true,
+          "available": true,
+          "col": 3,
+          "room": "R1",
+          "row": 2,
+          "seat_id": "r1-23"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "seats": [
+        {
+          "accessible": true,
+          "aisle": true,
+          "available": true,
+          "col": 0,
+          "room": "R2",
+          "row": 0,
+          "seat_id": "r2-00"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "R2",
+          "row": 0,
+          "seat_id": "r2-01"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "R2",
+          "row": 0,
+          "seat_id": "r2-02"
+        },
+        {
+          "accessible": false,
+          "aisle": true,
+          "available": true,
+          "col": 3,
+          "room": "R2",
+          "row": 0,
+          "seat_id": "r2-03"
+        },
+        {
+          "accessible": true,
+          "aisle": true,
+          "available": true,
+          "col": 0,
+          "room": "R2",
+          "row": 1,
+          "seat_id": "r2-10"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "R2",
+          "row": 1,
+          "seat_id": "r2-11"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "R2",
+          "row": 1,
+          "seat_id": "r2-12"
+        },
+        {
+          "accessible": false,
+          "aisle": true,
+          "available": true,
+          "col": 3,
+          "room": "R2",
+          "row": 1,
+          "seat_id": "r2-13"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "seats": [
+        {
+          "accessible": true,
+          "aisle": true,
+          "available": true,
+          "col": 0,
+          "room": "R3",
+          "row": 0,
+          "seat_id": "r3-00"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "R3",
+          "row": 0,
+          "seat_id": "r3-01"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "R3",
+          "row": 0,
+          "seat_id": "r3-02"
+        },
+        {
+          "accessible": false,
+          "aisle": true,
+          "available": true,
+          "col": 3,
+          "room": "R3",
+          "row": 0,
+          "seat_id": "r3-03"
+        }
+      ]
+    }
+  ],
+  "rooms_used": [
+    "R1"
+  ],
+  "search_stats": {
+    "nodes": 22,
+    "room_sets_tried": 1
+  },
+  "seat_order": [
+    "r1-00",
+    "r1-20",
+    "r1-01",
+    "r1-03",
+    "r1-02",
+    "r1-10",
+    "r1-12",
+    "r1-23",
+    "r1-11",
+    "r1-13"
+  ],
+  "status": "feasible",
+  "unqualified_registrants": [
+    {
+      "eligibility_reasons": [
+        "missing valid attempt for mandatory: c1-a1"
+      ],
+      "seated": false,
+      "student": "S05"
+    }
+  ]
+}

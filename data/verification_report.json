@@ -1,0 +1,793 @@
+{
+  "areas": [
+    {
+      "area": "gradebook",
+      "checks": [
+        {
+          "check": "product gp-030cf5a8afd7db0d exact recomputation",
+          "detail": "canonical JSON of independent recomputation matches stored product",
+          "ok": true
+        },
+        {
+          "check": "product gp-030cf5a8afd7db0d hand cross-multiply category C1 / S01",
+          "detail": "manual [124, 315] == stored [124, 315]",
+          "ok": true
+        },
+        {
+          "check": "product gp-030cf5a8afd7db0d eligibility flag/reason consistency (S01)",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "product gp-24561d60449c3f06 exact recomputation",
+          "detail": "canonical JSON of independent recomputation matches stored product",
+          "ok": true
+        },
+        {
+          "check": "product gp-24561d60449c3f06 hand cross-multiply category C1 / S01",
+          "detail": "manual [11113, 12600] == stored [11113, 12600]",
+          "ok": true
+        },
+        {
+          "check": "product gp-24561d60449c3f06 eligibility flag/reason consistency (S01)",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "product gp-3e381293e24756bd exact recomputation",
+          "detail": "canonical JSON of independent recomputation matches stored product",
+          "ok": true
+        },
+        {
+          "check": "product gp-3e381293e24756bd hand cross-multiply category C1 / S01",
+          "detail": "manual [11113, 12600] == stored [11113, 12600]",
+          "ok": true
+        },
+        {
+          "check": "product gp-3e381293e24756bd eligibility flag/reason consistency (S01)",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "product gp-26d7795f70fe6d03 exact recomputation",
+          "detail": "canonical JSON of independent recomputation matches stored product",
+          "ok": true
+        },
+        {
+          "check": "product gp-26d7795f70fe6d03 hand cross-multiply category C1 / S01",
+          "detail": "manual [11113, 12600] == stored [11113, 12600]",
+          "ok": true
+        },
+        {
+          "check": "product gp-26d7795f70fe6d03 eligibility flag/reason consistency (S01)",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "at least one grade product exists",
+          "detail": "",
+          "ok": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "area": "seating",
+      "checks": [
+        {
+          "check": "sp-076fa4828e30018a: registrants match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflicts match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: bound to a real stored grade product",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: every qualified registrant seated exactly once",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: seats unique, available, and exist in pinned room version",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S01 satisfied at r1-00",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S02 satisfied at r1-20",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S03 satisfied at r1-01",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S04 satisfied at r1-03",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S06 satisfied at r1-02",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S07 satisfied at r1-10",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S08 satisfied at r1-12",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S09 satisfied at r1-23",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S10 satisfied at r1-11",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: needs of S11 satisfied at r1-13",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S11|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S02|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S03|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S10|S09 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S01|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S03|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S07|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S06|S01 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S09|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: conflict S01|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: room count matches rooms_used field",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-076fa4828e30018a: above micro-enumeration limit, seat-by-seat checks applied",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: registrants match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: conflicts match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: needs match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: bound to a real stored grade product",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: every qualified registrant seated exactly once",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: seats unique, available, and exist in pinned room version",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: needs of S01 satisfied at g1",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: needs of S02 satisfied at g6",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: needs of S03 satisfied at g2",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: needs of S04 satisfied at g4",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: needs of S06 satisfied at g3",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: conflict S03|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: conflict S03|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: conflict S04|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: conflict S01|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: room count matches rooms_used field",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: enumeration finds the stored feasible plan",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: minimum room count proved by enumeration",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-13c6a7e8fca72ca5: lexicographic optimum proved by enumeration",
+          "detail": "stored ['g1', 'g6', 'g2', 'g4', 'g3'] vs enumerated ['g1', 'g6', 'g2', 'g4', 'g3']",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: registrants match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflicts match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: bound to a real stored grade product",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: every qualified registrant seated exactly once",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: seats unique, available, and exist in pinned room version",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S01 satisfied at r1-00",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S02 satisfied at r1-20",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S03 satisfied at r1-01",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S04 satisfied at r1-03",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S05 satisfied at r1-11",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S06 satisfied at r1-02",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S07 satisfied at r1-10",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S08 satisfied at r1-12",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S09 satisfied at r1-23",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S10 satisfied at r1-21",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: needs of S11 satisfied at r1-13",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S11|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S02|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S03|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S10|S09 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S01|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S05|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S03|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S07|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S06|S01 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S06|S05 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S09|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: conflict S01|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: room count matches rooms_used field",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1505fb990ac45029: above micro-enumeration limit, seat-by-seat checks applied",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: registrants match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflicts match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: bound to a real stored grade product",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: every qualified registrant seated exactly once",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: seats unique, available, and exist in pinned room version",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S01 satisfied at r1-00",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S02 satisfied at r1-20",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S03 satisfied at r1-01",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S04 satisfied at r1-03",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S05 satisfied at r1-11",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S06 satisfied at r1-02",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S07 satisfied at r1-10",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S08 satisfied at r1-12",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S09 satisfied at r1-23",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S10 satisfied at r1-21",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: needs of S11 satisfied at r1-13",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S11|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S02|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S03|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S10|S09 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S01|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S05|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S03|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S07|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S06|S01 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S06|S05 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S09|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: conflict S01|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: room count matches rooms_used field",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-1da6e8523e6ae1a0: above micro-enumeration limit, seat-by-seat checks applied",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: registrants match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflicts match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs match replayed head",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: bound to a real stored grade product",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: every qualified registrant seated exactly once",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: seats unique, available, and exist in pinned room version",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S01 satisfied at r1-00",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S02 satisfied at r1-20",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S03 satisfied at r1-01",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S04 satisfied at r1-03",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S05 satisfied at r1-11",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S06 satisfied at r1-02",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S07 satisfied at r1-10",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S08 satisfied at r1-12",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S09 satisfied at r1-23",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S10 satisfied at r1-21",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S11 satisfied at r1-13",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: needs of S12 satisfied at r1-22",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S11|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S02|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S03|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S10|S09 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S01|S10 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S05|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S03|S04 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S07|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S06|S01 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S06|S05 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S09|S08 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: conflict S01|S02 not adjacent",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: room count matches rooms_used field",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "sp-5711271a002e9910: above micro-enumeration limit, seat-by-seat checks applied",
+          "detail": "",
+          "ok": true
+        },
+        {
+          "check": "at least one seating plan exists",
+          "detail": "",
+          "ok": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "database": "/workspace/data/examkit.db",
+  "passed": true
+}

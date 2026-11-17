@@ -1,0 +1,179 @@
+{
+  "assignment": {
+    "S01": "g1",
+    "S02": "g6",
+    "S03": "g2",
+    "S04": "g4",
+    "S06": "g3"
+  },
+  "conflicts": [
+    [
+      "S04",
+      "S05"
+    ],
+    [
+      "S01",
+      "S02"
+    ],
+    [
+      "S05",
+      "S06"
+    ],
+    [
+      "S02",
+      "S03"
+    ],
+    [
+      "S02",
+      "S04"
+    ],
+    [
+      "S03",
+      "S04"
+    ]
+  ],
+  "eligible_students": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12"
+  ],
+  "exam_id": "E-MICRO",
+  "infeasible_reason": null,
+  "kind": "seating_plan",
+  "needs": {
+    "S01": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S02": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S03": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S04": {
+      "accessible": false,
+      "aisle": false
+    },
+    "S06": {
+      "accessible": false,
+      "aisle": false
+    }
+  },
+  "plan_id": "sp-13c6a7e8fca72ca5",
+  "product_hash": "837ea1f7236c5ed2",
+  "product_id": "gp-24561d60449c3f06",
+  "qualified_registrants": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S06"
+  ],
+  "registrants": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "registration_head": 45,
+  "room_count": 1,
+  "room_version": "greedy-v1",
+  "rooms_input": [
+    {
+      "id": "G",
+      "seats": [
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 0,
+          "room": "G",
+          "row": 0,
+          "seat_id": "g1"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "G",
+          "row": 0,
+          "seat_id": "g2"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "G",
+          "row": 0,
+          "seat_id": "g3"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 0,
+          "room": "G",
+          "row": 1,
+          "seat_id": "g4"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 1,
+          "room": "G",
+          "row": 1,
+          "seat_id": "g5"
+        },
+        {
+          "accessible": false,
+          "aisle": false,
+          "available": true,
+          "col": 2,
+          "room": "G",
+          "row": 1,
+          "seat_id": "g6"
+        }
+      ]
+    }
+  ],
+  "rooms_used": [
+    "G"
+  ],
+  "search_stats": {
+    "nodes": 14,
+    "room_sets_tried": 1
+  },
+  "seat_order": [
+    "g1",
+    "g6",
+    "g2",
+    "g4",
+    "g3"
+  ],
+  "status": "feasible",
+  "unqualified_registrants": [
+    {
+      "eligibility_reasons": [
+        "missing valid attempt for mandatory: c1-a1"
+      ],
+      "seated": false,
+      "student": "S05"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "assignment": {
+    "A": "g1",
+    "B": "g6",
+    "C": "g2",
+    "D": "g4",
+    "E": "g3",
+    "F": "g5"
+  },
+  "feasible": true,
+  "nodes": 16,
+  "reason": null,
+  "room_sets_tried": 1,
+  "rooms": [
+    "G"
+  ],
+  "rooms_used": 1
+}
