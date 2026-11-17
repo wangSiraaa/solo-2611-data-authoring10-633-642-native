@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "subject_id": "s1",
+      "age": "Y",
+      "district": "R",
+      "job": "J",
+      "sensitive": "x"
+    },
+    {
+      "subject_id": "s2",
+      "age": "Y",
+      "district": "R",
+      "job": "J",
+      "sensitive": "y"
+    },
+    {
+      "subject_id": "s3",
+      "age": "O",
+      "district": "R",
+      "job": "J",
+      "sensitive": "x"
+    },
+    {
+      "subject_id": "s4",
+      "age": "O",
+      "district": "R",
+      "job": "J",
+      "sensitive": "y"
+    }
+  ],
+  "hierarchies": {
+    "age": {
+      "Y": [
+        "Y",
+        "*"
+      ],
+      "O": [
+        "O",
+        "*"
+      ]
+    },
+    "district": {
+      "R": [
+        "R",
+        "*"
+      ]
+    },
+    "job": {
+      "J": [
+        "J",
+        "*"
+      ]
+    }
+  },
+  "purpose": "research",
+  "initial_grants": [
+    "s1",
+    "s2",
+    "s3",
+    "s4"
+  ],
+  "revoke": "s2",
+  "K": 2,
+  "D": 2,
+  "weights": [
+    1,
+    0,
+    0
+  ]
+}
