@@ -1,0 +1,125 @@
+{
+  "claims_before": [
+    {
+      "claim_id": "recording-A",
+      "track": "T",
+      "right_type": "recording",
+      "territory": "X",
+      "start": 0,
+      "end": 100,
+      "holder": "A",
+      "share": [
+        1,
+        1
+      ]
+    },
+    {
+      "claim_id": "composition-A",
+      "track": "T",
+      "right_type": "composition",
+      "territory": "X",
+      "start": 0,
+      "end": 100,
+      "holder": "A",
+      "share": [
+        1,
+        1
+      ]
+    }
+  ],
+  "claims_after": [
+    {
+      "claim_id": "recording-A",
+      "track": "T",
+      "right_type": "recording",
+      "territory": "X",
+      "start": 0,
+      "end": 100,
+      "holder": "A",
+      "share": [
+        1,
+        2
+      ]
+    },
+    {
+      "claim_id": "recording-B",
+      "track": "T",
+      "right_type": "recording",
+      "territory": "X",
+      "start": 0,
+      "end": 100,
+      "holder": "B",
+      "share": [
+        1,
+        2
+      ]
+    },
+    {
+      "claim_id": "composition-A",
+      "track": "T",
+      "right_type": "composition",
+      "territory": "X",
+      "start": 0,
+      "end": 100,
+      "holder": "A",
+      "share": [
+        1,
+        2
+      ]
+    },
+    {
+      "claim_id": "composition-B",
+      "track": "T",
+      "right_type": "composition",
+      "territory": "X",
+      "start": 0,
+      "end": 100,
+      "holder": "B",
+      "share": [
+        1,
+        2
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "o1",
+      "station": "S",
+      "program_id": "P",
+      "track": "T",
+      "territory": "X",
+      "start": 0,
+      "end": 61,
+      "source": "mic1",
+      "state": "confirmed"
+    },
+    {
+      "observation_id": "o2",
+      "station": "S",
+      "program_id": "P",
+      "track": "T",
+      "territory": "X",
+      "start": 30,
+      "end": 91,
+      "source": "mic2",
+      "state": "confirmed"
+    }
+  ],
+  "station": {
+    "station": "S",
+    "rate_cents_per_minute": 3,
+    "free": [
+      [
+        20,
+        80
+      ]
+    ]
+  },
+  "request": {
+    "stations": [
+      "S"
+    ],
+    "start": 0,
+    "end": 91
+  }
+}
