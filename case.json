@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "id": "A",
+      "kind": "assembly",
+      "type": "meter"
+    },
+    {
+      "id": "B",
+      "kind": "assembly",
+      "type": "meter"
+    },
+    {
+      "id": "good",
+      "kind": "part",
+      "lot": "L-good"
+    },
+    {
+      "id": "bad",
+      "kind": "part",
+      "lot": "L-bad"
+    }
+  ],
+  "before_edges": [
+    [
+      "good",
+      "A"
+    ]
+  ],
+  "change": [
+    [
+      "detach",
+      "good",
+      "A"
+    ],
+    [
+      "attach",
+      "bad",
+      "A"
+    ]
+  ],
+  "recall_lots": [
+    "L-bad"
+  ],
+  "shipment_request": {
+    "id": "ship-1",
+    "order": "O1",
+    "customer": "C1",
+    "root": "A"
+  },
+  "order": {
+    "id": "O1",
+    "customer": "C1",
+    "type": "meter",
+    "quantity": 1
+  }
+}
