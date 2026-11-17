@@ -1,0 +1,61 @@
+{
+  "symbol": "X",
+  "seller": "S",
+  "buyer": "B",
+  "opening_lots": [
+    {
+      "lot_id": "open-1",
+      "qty": 1,
+      "cost": 80
+    },
+    {
+      "lot_id": "open-2",
+      "qty": 1,
+      "cost": 90
+    }
+  ],
+  "before_orders": [
+    {
+      "order_id": "ask-1",
+      "account": "S",
+      "symbol": "X",
+      "side": "SELL",
+      "price": 100,
+      "qty": 1
+    }
+  ],
+  "after_order": {
+    "order_id": "buy-1",
+    "account": "B",
+    "symbol": "X",
+    "side": "BUY",
+    "price": 105,
+    "qty": 1
+  },
+  "price_priority_orders": [
+    {
+      "order_id": "old",
+      "account": "S",
+      "symbol": "X",
+      "side": "SELL",
+      "price": 100,
+      "qty": 1
+    },
+    {
+      "order_id": "new",
+      "account": "S",
+      "symbol": "X",
+      "side": "SELL",
+      "price": 90,
+      "qty": 1
+    },
+    {
+      "order_id": "take",
+      "account": "B",
+      "symbol": "X",
+      "side": "BUY",
+      "price": 105,
+      "qty": 1
+    }
+  ]
+}

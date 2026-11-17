@@ -1,0 +1,1 @@
+case.json全部金额为整数研究分，数量为整数件。opening_lots是S账户X标的的FIFO期初批次，取得顺序按数组；before_orders和after_order按顺序受理，price_priority_orders是独立小场景。材料没有撮合或成本仓代码。候选应按题面实现全部合法输入族，样例不是唯一验收输入。
