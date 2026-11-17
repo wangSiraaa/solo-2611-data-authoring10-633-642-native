@@ -1,0 +1,110 @@
+{
+  "rules": {
+    "threshold": [
+      3,
+      5
+    ],
+    "assessments": [
+      {
+        "id": "m1",
+        "max": 10,
+        "mandatory": true
+      },
+      {
+        "id": "n1",
+        "max": 20,
+        "mandatory": false
+      },
+      {
+        "id": "n2",
+        "max": 10,
+        "mandatory": false
+      }
+    ]
+  },
+  "before_attempts": [
+    {
+      "id": "am",
+      "student": "A",
+      "assessment": "m1",
+      "score": 6
+    },
+    {
+      "id": "an1",
+      "student": "A",
+      "assessment": "n1",
+      "score": 4
+    },
+    {
+      "id": "an2",
+      "student": "A",
+      "assessment": "n2",
+      "score": 5
+    },
+    {
+      "id": "bm",
+      "student": "B",
+      "assessment": "m1",
+      "score": 8
+    },
+    {
+      "id": "bn1",
+      "student": "B",
+      "assessment": "n1",
+      "score": 16
+    },
+    {
+      "id": "bn2",
+      "student": "B",
+      "assessment": "n2",
+      "score": 8
+    }
+  ],
+  "added_attempt": {
+    "id": "an2-new",
+    "student": "A",
+    "assessment": "n2",
+    "score": 8
+  },
+  "registration": [
+    "A",
+    "B"
+  ],
+  "requirements": {
+    "B": {
+      "accessible": true
+    }
+  },
+  "conflicts": [
+    [
+      "A",
+      "B"
+    ]
+  ],
+  "seats": [
+    {
+      "seat_id": "a1",
+      "room": "R",
+      "row": 0,
+      "col": 0,
+      "accessible": true,
+      "aisle": true
+    },
+    {
+      "seat_id": "a2",
+      "room": "R",
+      "row": 0,
+      "col": 1,
+      "accessible": false,
+      "aisle": false
+    },
+    {
+      "seat_id": "a3",
+      "room": "R",
+      "row": 0,
+      "col": 2,
+      "accessible": false,
+      "aisle": true
+    }
+  ]
+}
