@@ -1,0 +1,77 @@
+{
+  "name": "review-isolation",
+  "steps": [
+    {
+      "op": "bootstrap"
+    },
+    {
+      "op": "draft",
+      "tag": "d",
+      "request_id": "reject-1",
+      "k": "@head",
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "op": "subjects",
+      "k": "@head",
+      "purpose": "research",
+      "tag": "before"
+    },
+    {
+      "op": "review",
+      "draft": "@d",
+      "decision": "reject",
+      "reason": "not needed",
+      "expect": {
+        "state": "rejected"
+      }
+    },
+    {
+      "op": "subjects",
+      "k": "@head",
+      "purpose": "research",
+      "expect": {
+        "subjects": [
+          "s1",
+          "s3",
+          "s4"
+        ]
+      }
+    },
+    {
+      "op": "release",
+      "draft": "@d",
+      "release_id": "rel-nope",
+      "expect_error": "DRAFT_NOT_APPROVED"
+    },
+    {
+      "op": "draft",
+      "name": "new draft after rejection",
+      "request_id": "reject-2",
+      "k": "@head",
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "state": "pending",
+        "levels": [
+          1,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

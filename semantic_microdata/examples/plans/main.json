@@ -1,0 +1,215 @@
+{
+  "name": "main-lifecycle",
+  "steps": [
+    {
+      "op": "bootstrap",
+      "name": "load material + grants + revoke"
+    },
+    {
+      "op": "head",
+      "name": "prefix after bootstrap"
+    },
+    {
+      "op": "subjects",
+      "name": "prefix before revoke",
+      "k": 8,
+      "purpose": "research",
+      "expect": {
+        "subjects": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      }
+    },
+    {
+      "op": "subjects",
+      "name": "prefix after revoke",
+      "k": 9,
+      "purpose": "research",
+      "expect": {
+        "subjects": [
+          "s1",
+          "s3",
+          "s4"
+        ]
+      }
+    },
+    {
+      "op": "draft",
+      "name": "historical draft at k=8",
+      "tag": "old",
+      "request_id": "hist-8",
+      "k": 8,
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "state": "pending",
+        "levels": [
+          0,
+          0,
+          0
+        ],
+        "loss": 0,
+        "row_count": 4
+      }
+    },
+    {
+      "op": "review",
+      "draft": "@old",
+      "decision": "approve",
+      "reason": "historical audit",
+      "expect": {
+        "state": "approved"
+      }
+    },
+    {
+      "op": "release",
+      "name": "old draft must not release now",
+      "draft": "@old",
+      "release_id": "rel-old",
+      "expect_error": "CONSENT_MISSING"
+    },
+    {
+      "op": "inspect",
+      "name": "old slice still privately reproducible",
+      "draft": "@old",
+      "expect": {
+        "still_releasable": false,
+        "levels": [
+          0,
+          0,
+          0
+        ],
+        "row_count": 4
+      }
+    },
+    {
+      "op": "draft",
+      "name": "current draft at k=9",
+      "tag": "cur",
+      "request_id": "cur-9",
+      "k": 9,
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "state": "pending",
+        "levels": [
+          1,
+          0,
+          0
+        ],
+        "loss": 3,
+        "row_count": 3
+      }
+    },
+    {
+      "op": "draft",
+      "name": "same request replay is idempotent",
+      "request_id": "cur-9",
+      "k": 9,
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "levels": [
+          1,
+          0,
+          0
+        ],
+        "loss": 3
+      }
+    },
+    {
+      "op": "draft",
+      "name": "same request, different params",
+      "request_id": "cur-9",
+      "k": 9,
+      "purpose": "research",
+      "K": 3,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect_error": "DRAFT_CONFLICT"
+    },
+    {
+      "op": "review",
+      "draft": "@cur",
+      "decision": "approve",
+      "reason": "ok",
+      "expect": {
+        "state": "approved"
+      }
+    },
+    {
+      "op": "review",
+      "name": "review decision immutable",
+      "draft": "@cur",
+      "decision": "reject",
+      "reason": "changed mind",
+      "expect_error": "DRAFT_CONFLICT"
+    },
+    {
+      "op": "release",
+      "name": "current release succeeds",
+      "tag": "rel1",
+      "draft": "@cur",
+      "release_id": "rel-1",
+      "expect": {
+        "status": "released",
+        "k": 9,
+        "levels": [
+          1,
+          0,
+          0
+        ],
+        "loss": 3,
+        "row_count": 3
+      }
+    },
+    {
+      "op": "release",
+      "name": "release replay returns first result",
+      "draft": "@cur",
+      "release_id": "rel-1",
+      "expect": {
+        "status": "released",
+        "k": 9,
+        "levels": [
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "op": "private_ledger",
+      "release_id": "rel-1",
+      "expect": {
+        "k": 9,
+        "release_id": "rel-1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Python artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Runtime databases and generated releases
+*.db
+*.db-wal
+*.db-shm
+semantic_microdata/examples/out/
+semantic_microdata/examples/plans/out/
+
+# OS noise
+.DS_Store

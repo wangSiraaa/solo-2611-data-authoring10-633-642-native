@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semantic-microdata"
+version = "1.0.0"
+description = "Purpose-authorised data service and anonymous microdata publisher (synthetic K/D contract)"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+semantic-microdata = "semantic_microdata.cli:main"
+
+[tool.setuptools]
+packages = ["semantic_microdata"]
+
+[tool.setuptools.package-data]
+semantic_microdata = ["py.typed"]

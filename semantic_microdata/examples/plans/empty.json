@@ -1,0 +1,90 @@
+{
+  "name": "empty-slice",
+  "steps": [
+    {
+      "op": "bootstrap",
+      "grants": [],
+      "revoke": null
+    },
+    {
+      "op": "draft",
+      "tag": "empty",
+      "request_id": "empty-1",
+      "k": 0,
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "state": "pending",
+        "levels": [
+          0,
+          0,
+          0
+        ],
+        "loss": 0,
+        "row_count": 0
+      }
+    },
+    {
+      "op": "draft",
+      "tag": "empty_head",
+      "request_id": "empty-2",
+      "k": "@head",
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "state": "pending",
+        "levels": [
+          0,
+          0,
+          0
+        ],
+        "loss": 0,
+        "row_count": 0
+      }
+    },
+    {
+      "op": "review",
+      "draft": "@empty_head",
+      "decision": "approve",
+      "reason": "empty current",
+      "expect": {
+        "state": "approved"
+      }
+    },
+    {
+      "op": "release",
+      "tag": "rel-empty",
+      "draft": "@empty_head",
+      "release_id": "rel-empty",
+      "expect": {
+        "status": "released",
+        "levels": [
+          0,
+          0,
+          0
+        ],
+        "loss": 0,
+        "row_count": 0
+      }
+    },
+    {
+      "op": "private_ledger",
+      "release_id": "rel-empty",
+      "expect": {
+        "k": 4
+      }
+    }
+  ]
+}

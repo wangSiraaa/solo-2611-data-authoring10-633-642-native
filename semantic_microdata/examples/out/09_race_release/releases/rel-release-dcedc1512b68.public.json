@@ -1,0 +1,40 @@
+{
+  "D": 2,
+  "K": 2,
+  "draft_id": "d-2c3c9e1e2e0157094b0d186c",
+  "levels": [
+    1,
+    0,
+    0
+  ],
+  "loss": 3,
+  "purpose": "research",
+  "release_id": "rel-release",
+  "release_seq": 12,
+  "row_count": 3,
+  "rows": [
+    {
+      "age": "*",
+      "district": "R",
+      "job": "J",
+      "sensitive": "x"
+    },
+    {
+      "age": "*",
+      "district": "R",
+      "job": "J",
+      "sensitive": "x"
+    },
+    {
+      "age": "*",
+      "district": "R",
+      "job": "J",
+      "sensitive": "y"
+    }
+  ],
+  "weights": [
+    1,
+    0,
+    0
+  ]
+}

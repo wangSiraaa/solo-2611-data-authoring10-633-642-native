@@ -1,0 +1,58 @@
+{
+  "name": "reopen",
+  "steps": [
+    {
+      "op": "bootstrap"
+    },
+    {
+      "op": "draft",
+      "tag": "d",
+      "request_id": "reopen-1",
+      "k": "@head",
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "op": "review",
+      "draft": "@d",
+      "decision": "approve",
+      "reason": "durable"
+    },
+    {
+      "op": "release",
+      "draft": "@d",
+      "release_id": "rel-durable"
+    },
+    {
+      "op": "reopen",
+      "expect": {
+        "preserved": true
+      }
+    },
+    {
+      "op": "inspect",
+      "draft": "@d",
+      "expect": {
+        "still_releasable": true
+      }
+    },
+    {
+      "op": "get_release",
+      "release_id": "rel-durable",
+      "expect": {
+        "status": "released",
+        "levels": [
+          1,
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

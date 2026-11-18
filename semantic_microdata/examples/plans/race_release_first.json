@@ -1,0 +1,39 @@
+{
+  "name": "race-release-first",
+  "steps": [
+    {
+      "op": "bootstrap"
+    },
+    {
+      "op": "draft",
+      "tag": "d",
+      "request_id": "race-r2",
+      "k": "@head",
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "op": "review",
+      "draft": "@d",
+      "decision": "approve",
+      "reason": "race"
+    },
+    {
+      "op": "race",
+      "draft": "@d",
+      "release_id": "rel-race",
+      "revoke_subject": "s1",
+      "purpose": "research",
+      "winner": "release",
+      "expect": {
+        "winner": "release"
+      }
+    }
+  ]
+}

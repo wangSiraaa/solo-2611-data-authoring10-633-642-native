@@ -1,0 +1,21 @@
+{
+  "D": 2,
+  "K": 2,
+  "draft_id": "d-1e11b22764429ff3e7c32667",
+  "levels": [
+    0,
+    0,
+    0
+  ],
+  "loss": 0,
+  "purpose": "research",
+  "release_id": "rel-empty",
+  "release_seq": 3,
+  "row_count": 0,
+  "rows": [],
+  "weights": [
+    1,
+    0,
+    0
+  ]
+}

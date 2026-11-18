@@ -1,0 +1,26 @@
+{
+  "draft_id": "d-1e11b22764429ff3e7c32667",
+  "frozen_slice": {
+    "k": 0,
+    "purpose": "research",
+    "rows": []
+  },
+  "k": 0,
+  "levels": [
+    0,
+    0,
+    0
+  ],
+  "loss": 0,
+  "purpose": "research",
+  "release_id": "rel-empty",
+  "release_seq": 3,
+  "released_head_seq": 2,
+  "released_k": 0,
+  "request_id": "empty-1",
+  "review": {
+    "decision": "approved",
+    "reason": "empty release permitted",
+    "seq": 2
+  }
+}

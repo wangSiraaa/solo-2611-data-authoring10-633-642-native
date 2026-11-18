@@ -1,0 +1,93 @@
+{
+  "records": [
+    {
+      "plan": "empty",
+      "steps_ok": true,
+      "releases": [
+        {
+          "release_id": "rel-empty",
+          "ok": true,
+          "problems": [],
+          "k": 4,
+          "levels": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "infeasible",
+      "steps_ok": true,
+      "releases": []
+    },
+    {
+      "plan": "main",
+      "steps_ok": true,
+      "releases": [
+        {
+          "release_id": "rel-1",
+          "ok": true,
+          "problems": [],
+          "k": 9,
+          "levels": [
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "ordering",
+      "steps_ok": true,
+      "releases": []
+    },
+    {
+      "plan": "race_release_first",
+      "steps_ok": true,
+      "releases": [
+        {
+          "release_id": "rel-race",
+          "ok": true,
+          "problems": [],
+          "k": 9,
+          "levels": [
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "race_revoke_first",
+      "steps_ok": true,
+      "releases": []
+    },
+    {
+      "plan": "reopen",
+      "steps_ok": true,
+      "releases": [
+        {
+          "release_id": "rel-durable",
+          "ok": true,
+          "problems": [],
+          "k": 9,
+          "levels": [
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "plan": "review",
+      "steps_ok": true,
+      "releases": []
+    }
+  ],
+  "failures": []
+}

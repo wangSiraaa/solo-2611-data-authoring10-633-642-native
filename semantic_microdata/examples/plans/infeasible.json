@@ -1,0 +1,45 @@
+{
+  "name": "infeasible",
+  "steps": [
+    {
+      "op": "bootstrap",
+      "grants": [
+        "s1"
+      ],
+      "revoke": null
+    },
+    {
+      "op": "draft",
+      "tag": "inf",
+      "request_id": "inf-1",
+      "k": "@head",
+      "purpose": "research",
+      "K": 2,
+      "D": 2,
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "expect": {
+        "state": "infeasible",
+        "levels": null,
+        "loss": null,
+        "row_count": 1
+      }
+    },
+    {
+      "op": "review",
+      "draft": "@inf",
+      "decision": "approve",
+      "reason": "no",
+      "expect_error": "INFEASIBLE"
+    },
+    {
+      "op": "release",
+      "draft": "@inf",
+      "release_id": "rel-inf",
+      "expect_error": "DRAFT_NOT_APPROVED"
+    }
+  ]
+}

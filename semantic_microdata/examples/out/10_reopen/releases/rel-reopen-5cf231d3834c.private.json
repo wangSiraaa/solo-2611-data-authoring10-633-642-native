@@ -1,0 +1,66 @@
+{
+  "draft_id": "d-b7a709ccc9bb03d421fb6fd7",
+  "frozen_slice": {
+    "k": 9,
+    "purpose": "research",
+    "rows": [
+      {
+        "age": "Y",
+        "consent_commit_seq": 5,
+        "district": "R",
+        "job": "J",
+        "record_id": "rec-0001",
+        "revision": 0,
+        "sensitive": "x",
+        "subject_id": "s1",
+        "version_commit_order": 1,
+        "version_commit_seq": 1,
+        "version_op_id": null
+      },
+      {
+        "age": "O",
+        "consent_commit_seq": 7,
+        "district": "R",
+        "job": "J",
+        "record_id": "rec-0003",
+        "revision": 0,
+        "sensitive": "x",
+        "subject_id": "s3",
+        "version_commit_order": 3,
+        "version_commit_seq": 3,
+        "version_op_id": null
+      },
+      {
+        "age": "O",
+        "consent_commit_seq": 8,
+        "district": "R",
+        "job": "J",
+        "record_id": "rec-0004",
+        "revision": 0,
+        "sensitive": "y",
+        "subject_id": "s4",
+        "version_commit_order": 4,
+        "version_commit_seq": 4,
+        "version_op_id": null
+      }
+    ]
+  },
+  "k": 9,
+  "levels": [
+    1,
+    0,
+    0
+  ],
+  "loss": 3,
+  "purpose": "research",
+  "release_id": "rel-reopen",
+  "release_seq": 12,
+  "released_head_seq": 11,
+  "released_k": 9,
+  "request_id": "reopen-1",
+  "review": {
+    "decision": "approved",
+    "reason": "before restart",
+    "seq": 11
+  }
+}

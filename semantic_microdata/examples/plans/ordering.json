@@ -1,0 +1,166 @@
+{
+  "name": "ordering-and-idempotence",
+  "steps": [
+    {
+      "op": "bootstrap"
+    },
+    {
+      "op": "put",
+      "name": "retract s3 row",
+      "record_id": "rec-0003",
+      "subject_id": "s3",
+      "revision": 1,
+      "row": null,
+      "expect": {
+        "status": "accepted",
+        "retracted": true
+      }
+    },
+    {
+      "op": "subjects",
+      "k": "@head",
+      "purpose": "research",
+      "expect": {
+        "subjects": [
+          "s1",
+          "s4"
+        ]
+      }
+    },
+    {
+      "op": "grant",
+      "name": "re-grant s2 does not resurrect s3",
+      "subject": "s2",
+      "purpose": "research",
+      "expect": {
+        "status": "accepted"
+      }
+    },
+    {
+      "op": "subjects",
+      "k": "@head",
+      "purpose": "research",
+      "expect": {
+        "subjects": [
+          "s1",
+          "s2",
+          "s4"
+        ]
+      }
+    },
+    {
+      "op": "put",
+      "name": "revoke s1 by retraction",
+      "record_id": "rec-0001",
+      "subject_id": "s1",
+      "revision": 2,
+      "row": null,
+      "expect": {
+        "status": "accepted"
+      }
+    },
+    {
+      "op": "put",
+      "name": "stale revision refused",
+      "record_id": "rec-0001",
+      "subject_id": "s1",
+      "revision": 1,
+      "row": {
+        "age": "Y",
+        "district": "R",
+        "job": "J",
+        "sensitive": "x"
+      },
+      "expect_error": "STALE_REVISION"
+    },
+    {
+      "op": "put",
+      "name": "identical replay of a retraction",
+      "record_id": "rec-0001",
+      "subject_id": "s1",
+      "revision": 2,
+      "row": null,
+      "expect": {
+        "status": "replay",
+        "retracted": true
+      }
+    },
+    {
+      "op": "put",
+      "name": "conflicting content for accepted revision",
+      "record_id": "rec-0004",
+      "subject_id": "s4",
+      "revision": 0,
+      "row": {
+        "age": "O",
+        "district": "R",
+        "job": "J",
+        "sensitive": "x"
+      },
+      "expect_error": "IDENTICAL_RECORD_CONFLICT"
+    },
+    {
+      "op": "revoke",
+      "name": "revoke s4",
+      "subject": "s4",
+      "purpose": "research",
+      "expect": {
+        "status": "accepted"
+      }
+    },
+    {
+      "op": "revoke",
+      "name": "revoke replay is idempotent",
+      "subject": "s4",
+      "purpose": "research",
+      "expect": {
+        "status": "replay"
+      }
+    },
+    {
+      "op": "grant",
+      "name": "grant s4 again",
+      "subject": "s4",
+      "purpose": "research",
+      "expect": {
+        "status": "accepted"
+      }
+    },
+    {
+      "op": "subjects",
+      "k": "@head",
+      "purpose": "research",
+      "expect": {
+        "subjects": [
+          "s2",
+          "s4"
+        ]
+      }
+    },
+    {
+      "op": "subject_view",
+      "subject": "s1",
+      "k": "@head",
+      "purpose": "research",
+      "expect": {
+        "authorised": false,
+        "row": null
+      }
+    },
+    {
+      "op": "consent_history",
+      "subject": "s4",
+      "purpose": "research",
+      "expect": {
+        "$len": 3
+      }
+    },
+    {
+      "op": "record_history",
+      "subject": "s1",
+      "expect": {
+        "$len": 2
+      }
+    }
+  ]
+}
